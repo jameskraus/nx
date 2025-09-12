@@ -97,7 +97,7 @@ async function getTerminalOutputLifeCycle(
   // Use TUI if TUI is enabled and we have tasks to run
   const shouldUseTui = isTuiEnabled() && tasks.length > 0;
   const tuiMode = isRunOne ? TuiMode.Inline : TuiMode.FullScreen;
-  
+
   if (shouldUseTui) {
     const interceptedNxCloudLogs: (string | Uint8Array<ArrayBufferLike>)[] = [];
 
@@ -173,7 +173,7 @@ async function getTerminalOutputLifeCycle(
 
     let tsLifeCycle: LifeCycle;
     let printSummary: (() => void) | undefined;
-    
+
     // Only create TUI lifecycle if we're using the TUI
     if (shouldUseTui) {
       const tuiResult = getTuiTerminalSummaryLifeCycle({
