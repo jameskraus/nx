@@ -1,5 +1,13 @@
 {
   "mcpServers": {
+<<<<<<< HEAD
+=======
+    "nx": {
+      "command": "pnpm",
+      "args": ["nx-mcp"],
+      "env": {}
+    },
+>>>>>>> b5897cbf61 (feat(maven): add batch executor for multi-task Maven execution)
     "nx-mcp": {
       "type": "stdio",
       "command": "npx",
